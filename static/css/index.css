@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "jbm";
+    src: url("../fonts/jbm_r.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-wrap: wrap;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "jbm", monospace;
+  --bg: #111211;
+  --fg: #cccfcc;
+  --fg2: #8a908a;
+  color: var(--fg);
+}
+
+body,html {
+  background-color: var(--bg);
+}
+
+.status {
+  color: var(--fg2);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.progress-bar {
+  width: 110%;
+  border: var(--fg2) 4px solid;
+  height: 1.85rem;
+  position: relative;
+  overflow: hidden;
+  padding: 4px;
+  top: 7rem;
+}
+
+.progress-bar__count {
+  background-color: var(--fg2);
+  width: 0%;
+  height: 100%;
+}

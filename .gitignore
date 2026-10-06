@@ -1,6 +1,1 @@
-*
-!*/
-!*.html
-!*.min.*
-!.gitignore
-!*/fonts/*
+.prettierrc

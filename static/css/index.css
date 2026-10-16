@@ -1,61 +1,85 @@
-@font-face {
-    font-family: "jbm";
-    src: url("../fonts/jbm_r.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  text-wrap: wrap;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-wrap: nowrap;
+    -webkit-user-drag: none;
 }
 
 :root {
-  font-family: "jbm", monospace;
-  --bg: #111211;
-  --fg: #cccfcc;
-  --fg2: #8a908a;
-  color: var(--fg);
+    font-family: "JetBrains Mono", monospace;
+    --bg: #000;
+    --fg: #bcb;
+    --acc: #6d7;
+    color: var(--fg);
 }
 
-body,html {
-  background-color: var(--bg);
+.name-block {
+    text-align: center;
 }
 
-.status {
-  color: var(--fg2);
+html,body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+}
+html{
+    background-color: var(--bg);
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+.jobtitle {
+    color: #9a9;
 }
 
-.wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+span.nick {
+    font-size: 2.95rem;
+    white-space: 1px;
+    color: var(--acc)                                       ;
+} 
+
+.desc > .about {
+    text-align: center;
+    font-size: 0.95rem;
+    text-wrap: wrap;
+    max-width: 75vw;
+    margin-top: 1.8rem;
 }
 
-.progress-bar {
-  width: 110%;
-  border: var(--fg2) 4px solid;
-  height: 1.85rem;
-  position: relative;
-  overflow: hidden;
-  padding: 4px;
-  top: 7rem;
+.unavailable {
+    fill: #565;
 }
 
-.progress-bar__count {
-  background-color: var(--fg2);
-  width: 0%;
-  height: 100%;
+.vd {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    height: 100vh;
+    margin-top: 5vh;
+    filter: blur(2px);
+    rotate: 0deg;
+}
+
+.socials {
+    display: flex;
+    gap: 1.25rem;
+    margin-top: 3rem;
+}
+
+.accent {
+    color: #8d9;
+}
+
+.details {
+    font-style: italic;
+    font-size: 0.8rem;
+    color: #9a9;
+}
+
+::selection{
+    background: #bcb2;
 }

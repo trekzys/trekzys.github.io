@@ -4,12 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>trekzys??</title>
-  <style>
-    html,body {background: #222;}
-    :root{color:whitesmoke;font-family:monospace;}
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 <body>
-  <p>There might be something here.</p>
+  <video class="vd" src="./static/video/lambda.webm" autoplay muted loop></video>
+
+  <div class="name-block">
+    <h1 class="title">meet, <span class="nick">trekzys</span></h1>
+    <h2 class="jobtitle">Young developer from Penza</h2>
+  </div>
+
+  <div class="desc">
+    <p class="about">A 15-year-old enthusiast who learned his first programming language at age 9 <span class="details">(it was Python)</span>. He is currently a Senior Lua developer and a Middle Go developer. His major projects currently in development include <span class="accent">TSMR</span> <span class="details">(the full name is not being disclosed at this time)</span> and <span class="accent">openOMSI ServerAdmin</span>.</p>
+  </div>
+
+  <div class="socials">
+    <div class="social">
+      <a href="https://github.com/trekzys" target="_blank" class="social-link">
+        <box-icon type='logo' size="64px" color="var(--fg)" name='github' />
+      </a>
+    </div>
+    <div class="social">
+      <a href="https://www.youtube.com/@im.lambda" target="_blank" class="social-link">
+        <box-icon type='logo' size="64px" color="var(--fg)" name='youtube' />
+      </a>
+    </div>
+    <div class="social">
+      <a href="https://t.me/the1403_new" target="_blank" class="social-link">
+        <box-icon type='logo' size="64px" color="var(--fg)" name='telegram' />
+      </a>
+    </div>
+    <div class="social">
+        <box-icon class="social-link unavailable" title="Soon..." type='logo' size="64px" name='discord-alt' />
+    </div>
+  </div>
 </body>
 </html>
